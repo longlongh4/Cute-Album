@@ -1,16 +1,10 @@
 import QtQuick 2.0
+import "./effects/BookEffect"
 
 Rectangle {
-    width: 360
-    height: 360
-    Text {
-        text: qsTr("Hello World")
-        anchors.centerIn: parent
-    }
-    MouseArea {
+    width: 960
+    height: 960
+    BookEffect{
         anchors.fill: parent
-        onClicked: {
-            Qt.quit();
-        }
     }
 }
